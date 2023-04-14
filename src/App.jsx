@@ -30,7 +30,7 @@ function App() {
         }
     }
 
-    return (
+    return (  // npm run dev
         <div className="App">
             <div className="card">
                 <button onClick={getNotification}>
