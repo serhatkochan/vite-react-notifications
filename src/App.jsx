@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import './App.css'
 import reactLogo from './assets/react.svg'
 
@@ -36,7 +35,7 @@ function App() {
                 <button onClick={getNotification}>
                     Anlık Bildirim
                 </button>
-                <button onClick={() => setTimeout(() => getNotification(), 3000)}>
+                <button onClick={() => setTimeout(() => getNotification(), 1000)}>
                     1 saniye sonra bildirim
                 </button>
             </div>
