@@ -23,7 +23,7 @@ function App() {
     }
     const alertNotification = (title, body, icon) => {
         const notification = new Notification(title, {body, icon});
-        notification.notification.onclick = () => {
+        notification.onclick = () => {
             notification.close();
             window.parent.focus();
         }
