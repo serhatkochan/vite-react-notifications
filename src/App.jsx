@@ -24,8 +24,10 @@ function App() {
     const alertNotification = (title, body, icon) => {
         const notification = new Notification(title, {body, icon});
         notification.onclick = () => {
-            notification.close();
-            window.parent.focus();
+            // bildirime tıklanınca yapılacaklar
+            console.log('Serhat')
+            notification.close(); // bildirimi kapatır
+            window.parent.focus(); // tarayıcıya odaklanır
         }
     }
 
